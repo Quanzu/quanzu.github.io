@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    background-image: url(../images/ParallaxStars.png), url(../images/starfield.jpg);
+    background-position: 0px 0px, 0px 0px;
+    background-repeat: repeat, repeat;
+    animation: starBackground linear 20s infinite;
+}
+
+#introCircle {
+    width: 300px;
+    height: 300px;
+    border-radius: 2000px;
+    text-align: center;
+    border: 2px dashed grey;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/*#introCircle {
+    animation: spin;
+    animation-duration: 10s;
+}*/
+
+#introCircle h1 {
+    padding-top: 100px;
+    
+}
+
+@keyframes spin {
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes starBackground {
+    from { background-position: 0px 0px, 0px 0px;}
+    to { background-position: 0px -480px, 0px, 837px}
+}
